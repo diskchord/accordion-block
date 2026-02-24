@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+.wp-block-legacy-accordion a.title {
+    font-weight: bold;
+    color: #fff;
+}
+
+.wp-block-legacy-accordion h5 {
+    color: #270029 !important;
+    font-family: 'Cinzel', serif;
+}
+
+.wp-block-legacy-accordion a.jump {
+    font-size: 16pt;
+    color: #f0f;
+}
+
+.wp-block-legacy-accordion .panel {
+    position: relative;
+    z-index: 900;
+    text-align: left;
+    background-image: linear-gradient(to bottom right, #fcf, #cac);
+    margin-top: 0;
+    border-radius: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out, margin-top 0.2s ease-out, margin-bottom 0.2s ease-out;
+    margin-bottom: 0;
+}
+
+.wp-block-legacy-accordion .h4header.active + .panel {
+    margin-top: -27px;
+    margin-bottom: 20px;
+}
+
+.wp-block-legacy-accordion .h4header::after {
+    position: absolute;
+    content: '\002B';
+    font-size: 32px;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 1;
+    color: #fff !important;
+    font-weight: 900;
+}
+
+.wp-block-legacy-accordion .panelinside {
+    padding: 40px 20px 0 20px;
+}
+
+.wp-block-legacy-accordion .active::after {
+    content: '\002D';
+}
+
+.wp-block-legacy-accordion .h4header {
+    position: relative;
+    z-index: 1000;
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    border: 0;
+    border-radius: 10px;
+    background: linear-gradient(to bottom right, #9b0e93, #5e005f);
+    text-align: left;
+}
+
+/* Keep editor block controls above accordion layers. */
+.editor-styles-wrapper .wp-block-legacy-accordion .h4header,
+.editor-styles-wrapper .wp-block-legacy-accordion .panel {
+    z-index: auto;
+}
+
+.wp-block-legacy-accordion.accordion-item {
+    height: auto;
+    min-height: 0;
+    overflow: visible;
+    margin-bottom: 10px;
+}
+
+.wp-block-legacy-accordion .accordion-title {
+    color: #fff;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.wp-block-legacy-accordion .pricelist {
+    background-image: linear-gradient(to bottom right, #faf9ff, #e8c7ee);
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.wp-block-legacy-accordion b {
+    font-size: 12pt;
+}
+
+.wp-block-legacy-accordion .theader {
+    color: #9b0e93;
+    font-weight: bold;
+}
+
+.wp-block-legacy-accordion .pricelist > tbody > tr > td,
+.wp-block-legacy-accordion .pricelist > tr > td {
+    border: none !important;
+}
+
+.wp-block-legacy-accordion .item {
+    font-weight: bold;
+    color: #000 !important;
+    width: 200px;
+}
+
+.wp-block-legacy-accordion .price {
+    font-weight: normal;
+    color: #000 !important;
+}
+
+@media only screen and (max-width: 855px) {
+    .wp-block-legacy-accordion .pricelist {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 855px) {
+    .wp-block-legacy-accordion .pricelist {
+        width: 100%;
+    }
+}
